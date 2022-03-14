@@ -11,6 +11,7 @@ class Log(models.Model):
     log_user = models.TextField(max_length = 100)
     event_name = models.TextField(max_length=100)
     event_payload = models.TextField(max_length=10000, blank = True)
+    client_timestamp = models.DateTimeField()
 
     # Methods
     def __str__(self):
