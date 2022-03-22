@@ -10,7 +10,7 @@ class Log(models.Model):
     log_date = models.DateTimeField(auto_now_add=True)
     log_user = models.TextField(max_length = 100)
     event_name = models.TextField(max_length=100)
-    event_payload = models.TextField(max_length=10000, blank = True)
+    event_payload = models.TextField( blank = True)
     client_timestamp = models.DateTimeField()
 
     # Methods
